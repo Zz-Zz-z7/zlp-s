@@ -1,0 +1,55 @@
+/* body{
+    background-color: rgb(60,60,70);
+    
+} */
+.Navigation_bar{
+    position: relative;/* a标签与div块对齐 */
+    /* left: 1%; */
+    /* top: 250px; */
+    display: flex;/* 设置弹性容器 */
+    width: 1540px;
+    height: 60px;
+    background-color: rgba(117, 116, 116, 0.352);
+    box-shadow: 2px 5px 15px rgb(0,0,0,.7);
+    border-radius: 10px;
+
+}
+.Navigation_bar a{
+    width: 220px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 宋体;
+    text-decoration: none;
+    z-index: 20;
+    color: seashell;
+}
+.Navigation_bar_{
+    position: absolute;
+    left: 0;
+    width: 220px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: rgb(179, 179, 199);
+    z-index: 12; /* 使不遮盖字*/
+    transition: .5s;
+}
+.Navigation_bar a:nth-child(2):hover~.Navigation_bar_{
+    left: 220px;
+}
+.Navigation_bar a:nth-child(3):hover~.Navigation_bar_{
+    left: 440px;
+}
+.Navigation_bar a:nth-child(4):hover~.Navigation_bar_{
+    left: 660px;
+}
+.Navigation_bar a:nth-child(5):hover~.Navigation_bar_{
+    left: 880px;
+}
+.Navigation_bar a:nth-child(6):hover~.Navigation_bar_{
+    left: 1100px;
+}
+.Navigation_bar a:nth-child(7):hover~.Navigation_bar_{
+    left: 1320px;
+}

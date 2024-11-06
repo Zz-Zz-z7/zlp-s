@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+	background-color:rgb(104,40,40) ;
+}
+/* 滚动条 */
+::-webkit-scrollbar{
+    display: none;
+}
+#container{
+    width: 100vw;
+    height: auto;
+}
+
+section{
+    height: 87vh;
+    background-color: rgb(251, 251, 240);
+    display: flex;
+    
+}
+div>h1{
+
+    color: #fff;
+    font-size: 10vh
+}
+section>p{
+    position: relative;
+    top: 30px;
+    left: 70px;
+    color: #fff;
+    font-size: 15px;
+}
+.img{
+    background-size: auto;
+    /* 设置背景图像起始位置 */
+    background-position: center;
+    overflow: hidden;
+    /* 背景图片是固定的 */
+    background-attachment: fixed;
+    /* 表示背景图像不会平铺，即背景图像会按照其原始大小显示在元素内 */
+    background-repeat: no-repeat;
+    /* 元素的最大宽度。当元素内容超过最大宽度时，浏览器会自动将其缩小，从而保证元素不会超出设定的最大宽度 */
+    max-width: 100%;
+
+}
+#img1{
+    background-image: url(../Image/川剧1.jpg);
+}
+#img2{
+    background-image: url(../Image/川剧002.jpg);
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	
+	
+}
+
+.container{
+	max-width: 1200px;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	transition: 0.5s;
+}
+.container .card{
+    top: 40px;
+    left: 30%;
+	position: relative;
+	width: 460px;
+	height: 550px;
+	background: #fff;
+	display: flex;
+	transition: 0.5s;
+    margin-right: 40px;
+	justify-content: center;
+}
+.container:hover .card{
+	filter: blur(5px);
+	transform: scale(.7);
+	justify-content: center;
+}
+.container .card:hover{
+	filter: blur(0px);
+	transform: scale(1);
+}
+.container .card:before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	z-index: 1;
+	transition: 0.5s;
+}
+.container .card:hover:before{
+	background: #482020;
+	transform: scaleY(1.15);
+	box-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+.container .card .content{
+	z-index: 2;
+	padding: 0 20px;
+	transition: 0.5s;
+}
+.container .card .content h2{
+	text-align: center;
+	z-index: 2;
+	padding: 0 20px;
+	transition: 0.5s;
+}
+.container .card:hover .content{
+	color: #fff;
+}
+.container .card .content h2{
+	font-size: 3em;
+}
+.container .card .content p{
+	font-size: 0.9em;
+}
+.container .card .content a{
+
+	margin-top: 15px;
+	padding: 5px 10px;
+	background: #262626;
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+	left:185px;
+	text-align: center;
+	line-height: 100%;
+	display: block;
+	height: 15px;
+	width: 50px;
+	
+}
+.container .card:hover .content a{
+	background: #2196f3;
+}
+

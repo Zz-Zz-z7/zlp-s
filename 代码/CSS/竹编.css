@@ -1,0 +1,103 @@
+body {
+   
+    background-color: rgb(168, 173, 167);
+}
+    
+.a {
+    position: relative;
+    width: 1500px;
+    height: 2500px;
+    /* background-color: rgb(53, 99, 99); */
+    overflow: hidden;
+}
+
+.b {
+
+    position: absolute;
+    left: 50%;
+    top: 700px;
+    font: 900 50px 'Vijaya';
+    transition: 1s;
+    transform: translateX(-50%);
+}
+
+.p1 {
+    position: absolute;
+    top: 200px;
+    right: 50px;
+    width: 300px;
+    transform: rotateZ(20deg);
+}
+
+.t {
+    left: 200px;
+    position: fixed;
+    opacity: 1;
+    transition: .5s;
+}
+
+.t1 {
+    position: absolute;
+    top: 140px;
+    width: 500px;
+    font: 600 50px '';
+}
+
+.t2 {
+    position: absolute;
+    top: 250px;
+    width: 500px;
+    font: 600 25px '';
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.p2 {
+    position: absolute;
+    top: 840px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+}
+
+.c {
+    
+    width: 300px;
+    position: absolute;
+    top: 840px;
+    left: -300px;
+    font: 400 22px "";
+    transition: 1s;
+}
+
+.d {
+   
+    width: 300px;
+    position: absolute;
+    right: -300px;
+    top: 840px;
+    font: 400 22px "";
+    transition: 1s;
+}
+
+.line {
+    
+    position: absolute;
+    top: 1300px;
+    width: 0;
+    height: 5px;
+    transition: .5s;
+    background-color: black;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.line2 {
+    
+    width: 5px;
+    height: 0;
+    background-color: black;
+    box-shadow: 2px 2px 5px #000;
+    transition: .7s;
+}

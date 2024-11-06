@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.wrap {
+    top: 20px;
+    position: relative;
+    width: 700px;
+    display: flex;
+    left: 27%;
+    justify-content: center;
+    align-items: center; 
+}
+
+.big_img {
+    width: 400px;
+    height: 500px;
+    transition: .4s;
+    background-size: cover;
+    margin-right: 50px;
+}
+
+.small_img {
+    width: 200px;
+    height: 500px;
+    display: flex;
+    /* 纵向布局 */
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.d {
+    position: relative;
+    width: 200px;
+    height: 90px;
+    right: 0;
+    transition: .5s;
+    overflow: hidden;
+}
+
+.d img {
+    position: absolute;
+    width: 200px;
+    /* 小图片上移 ,人物在中心*/
+    transform: translate(0, -50px); 
+    transition: 0.5s;
+    right: 0; 
+}
+
+.d.dd {
+    opacity: 0;
+    /* 小图片左移动效果 */
+    right: 250px;
+}
+
+.d:hover img {
+    /* 个元素的透明度级别 */
+    opacity: 0;
+    right: 250px;
+}

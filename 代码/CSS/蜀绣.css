@@ -1,0 +1,164 @@
+*{
+	margin: 0;
+	padding: 0;
+	/* box-sizing: border-box; */
+	font-family: 'Poppins', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+	background-color:rgb(32,45,89) ;
+}
+/* 滚动条 */
+::-webkit-scrollbar{
+    display: none;
+}
+#container{
+    width: 100vw;
+    height: auto;
+}
+
+section{
+    height: 92vh;
+    background-color: rgb(91, 124, 162);
+    /* color: #fff;
+    font-size: 20vh; */
+    display: flex;
+    /* 将元素(一般是flex容器内的子元素)在水平轴居中对齐 */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+div>h1{
+
+    color: #fff;
+    font-size: 10vh
+    /* position: relative;
+    top: 30px;
+    left: 70px; */
+    
+}
+section>p{
+    position: relative;
+    top: 30px;
+    left: 70px;
+    color: #fff;
+    font-size: 15px;
+}
+.img{
+    background-size: auto;
+    /* 设置背景图像起始位置 */
+    background-position: center;
+    overflow: hidden;
+    /* 背景图片是固定的 */
+    background-attachment: fixed;
+    /* 表示背景图像不会平铺，即背景图像会按照其原始大小显示在元素内 */
+    background-repeat: no-repeat;
+    /* 元素的最大宽度。当元素内容超过最大宽度时，浏览器会自动将其缩小，从而保证元素不会超出设定的最大宽度 */
+    max-width: 100%;
+    /* 版权 */
+    user-select: none;
+    cursor: default;
+}
+#img1{
+    background-image: url(../Image/蜀绣01.jpg);
+}
+#img2{
+    background-image: url(../Image/蜀绣02.jpg);
+}
+
+
+/* body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: linear-gradient(0deg, #fff 50%, #2196f3);
+} */
+.container1{
+	max-width: 1520px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	transition: 0.5s;
+}
+.container1 .card{
+	position: relative;
+    top: 100px;
+    /* left: 10%; */
+	width: 750px;
+	height: 450px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s;
+    margin-right: 2px;
+    
+}
+.container1:hover .card{
+	filter: blur(5px);
+	transform: scale(.7);
+}
+.container1 .card:hover{
+	filter: blur(0px);
+	transform: scale(1);
+}
+.container1 .card:before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	z-index: 1;
+	transition: 0.5s;
+}
+.container1 .card:hover:before{
+	background: #020237;
+	transform: scaleY(1.15);
+	box-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+.container1 .card .content{
+	text-align: center;
+	z-index: 2;
+	padding: 0 20px;
+	transition: 0.5s;
+}
+.container1 .card:hover .content{
+	color: #fff;
+}
+.container1 .card .content h2{
+	font-size: 3em;
+}
+.container1 .card .content p{
+	font-size: 0.9em;
+}
+.container1 .card .content a{
+	display: inline-block;
+	margin-top: 15px;
+	padding: 5px 10px;
+	background: #262626;
+	color: #fff;
+	text-decoration: none;
+}
+.container1 .card:hover .content a{
+	background: #2196f3;
+}
+.one{
+	position: relative;
+	display: flex;
+	/* justify-content: center; */
+	flex-wrap: wrap;
+	margin: 100px 150px;
+}
+.one >h2{
+	font-family: 宋体;
+	font-size: 3em;
+	color: #fff;
+}
+.one >p{
+	font-size: 0.9em;
+	color: #fff;
+}
